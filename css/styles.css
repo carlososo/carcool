@@ -25,3 +25,48 @@ img {
 .altura {
     height: 65rem;
 }
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.formulario {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: solid;
+    border-radius: 8px;
+}
+
+legend {
+    width: auto;
+}
+
+.campo {
+    display: flex;
+    margin: 2rem 2rem;
+    justify-content: space-between;
+    padding: 0 3rem;
+    width: 40rem;
+}
+
+.campo label {
+    flex: 1;
+}
+
+.campo select {
+    width: 15rem;
+}
+
+.bg-negroso {
+    background-color: #3e4551;
+    color: white;
+}

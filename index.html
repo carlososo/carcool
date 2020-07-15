@@ -24,7 +24,7 @@
                         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cotizador</a>
+                        <a class="nav-link" href="#formulario">Cotizador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Nosotros</a>
@@ -45,22 +45,22 @@
                     <div class="carousel-item active altura">
                         <img src="img/a-l-moheR9rdRGY-unsplash.jpg" class="d-block w-90 " alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Es momento de estrenar</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h2>Es momento de estrenar</h2>
+                            <p>En Car cool pensamos en ti, por eso puedes estrenar un auto con tan solo el 20% de enganche.</p>
                         </div>
                     </div>
                     <div class="carousel-item altura">
                         <img src="img/erik-mclean-ZRns2R5azu0-unsplash.jpg" class="d-block w-90" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Pregunta por nuestros modelos disponibles</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h2>Pregunta por nuestros modelos disponibles</h2>
+                            <p>¡Tenemos los mejores modelos de los últimos años!</p>
                         </div>
                     </div>
                     <div class="carousel-item altura">
                         <img src="img/chuttersnap-gts_Eh4g1lk-unsplash.jpg" class="d-block w-90" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>El mejor plan a tu medida</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h2>El mejor plan a tu medida</h2>
+                            <p>No hay mejor momento que ahora, tenemos un plan personalizado para ti</p>
                         </div>
                     </div>
                 </div>
@@ -76,9 +76,89 @@
         </div>
     </header>
     <main>
+        <div class="container">
+            <div class="centrar">
+                <form action="#" class="formulario" id="formulario">
+                    <fieldset>
+                        <legend>Cotizador</legend>
+                        <div class="campo">
+                            <label for="marca">Marca:</label>
+                            <select name="marca" id="marca">
+                        <option disabled> --Elija una Marca-- </option>
+                        <option value="0">Chevrolet</option>
+                        <option value="1">Ford</option>
+                        <option value="2">Nissan</option>
+                    </select>
+                        </div>
+                        <div class="campo">
+                            <label for="anio">Año:</label>
+                            <select name="anio" id="anio">
+                            <option disabled> --Elije un año-- </option>
+                            <option value="1">2019</option>
+                            <option value="2">2020</option>
+                        </select>
+                        </div>
+                        <div class="campo">
+                            <label for="transmision">Transmision: </label>
+                            <select name="transmision" id="transmision">
+                            <option disabled> --Elije la transmision--</option>
+                            <option value="1">Manual</option>
+                            <option value="2">Standard</option>
+                        </select>
+                        </div>
+                        <div class="campo">
+                            <label for="presupuesto">Presupuesto:</label>
+                            <input type="number" name="presupuesto" id="presupuesto" min="15000" max="150000">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
 
+        <!-- cartas de carros -->
+        <section class="carros">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 justify-content-between">
+                        <div class="card">
+                            <img src="img/sven-d-a4S6KUuLeoM-unsplash.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 justify-content-between">
+                        <div class="card">
+                            <img src="img/samuele-errico-piccarini-FMbWFDiVRPs-unsplash.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 justify-content-between">
+                        <div class="card">
+                            <img src="img/peter-broomfield-m3m-lnR90uM-unsplash.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!--footer -->
+    <footer class=" font-small bg-negroso pt-4">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#"> Carcool.something</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
