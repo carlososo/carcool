@@ -1,5 +1,6 @@
 (function() {
     'use strict'
+
     let año = [];
     let marca = [];
     let modelo = [];
@@ -8,6 +9,7 @@
     let colores = []
     let transmision = []
     let presupuesto = []
+
     for (let i = 0; i < autos.length; i++) {
         año.push(autos[i].year);
         marca.push(autos[i].make);
@@ -19,6 +21,7 @@
         // Calculo del valor maximo de enganche
         presupuesto.push(autos[i].price * 0.2)
     }
+
     console.log(año);
     console.log(marca);
     console.log(modelo);
@@ -28,7 +31,6 @@
     console.log(transmision);
     console.log(presupuesto)
 
-    let card = []
 
     // funcion para busqueda de presupuesto
     buscar.addEventListener('click', function() {
@@ -36,14 +38,10 @@
         for (var i = 0; i < autos.length; i++) {
             var budget = Math.floor(autos[i].price * 0.2)
             if ( budget <= busqueda) {
-                card.push(
                     autos[i].make
                     autos[i].model
                     autos[i].colors
                     autos[i].price
-                )
-                busquedaCar.push(car[p])
-                insertarCar(car[p]);
             }
         }
 
@@ -54,4 +52,6 @@
 
 
 
-})();
+
+
+})()
