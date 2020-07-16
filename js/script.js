@@ -24,4 +24,20 @@
     console.log(colores);
     console.log(transmision);
 
+
+        // Obtener la informacion del cotizador
+
+        // Marca MAKE
+    var company = document.getElementById(marca).value
+    if (company == "0"){
+        var manufacturedBy= "Chevrolet"
+    } else if (company == "1"){
+        var manufacturedBy = "Ford"
+    } else { manufacturedBy = "Nissan"}
+
+
+
+
+
+
 })();
