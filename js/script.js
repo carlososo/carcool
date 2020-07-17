@@ -11,13 +11,14 @@
         budget = parseInt(budget);
 
 
+        let cardContainer = document.getElementById('linea').innerHTML = "";
         for (var i = 0; i < autos.length; i++) {
             // console.log(autos[i].price);
+            // console.log(autos[i].year);
             var aGastar = autos[i].price * 0.2;
-            console.log(autos[i].year);
             if (autos[i].year == traductorAnio(anioUsuario) && autos[i].make == traductorMarca(marcaUsuario) &&
                 aGastar <= budget && autos[i].transmision == traductorTransmision(transmisionUsuario)) {
-                let cardContainer = document.getElementById('linea')
+                cardContainer = document.getElementById('linea');
                 let carta = document.createElement('div')
                 carta.classList.add('col-xl-3')
                 carta.classList.add('col-lg-4')
@@ -42,11 +43,6 @@
             } else {}
 
         }
-
-        // console.log(traductorMarca(marcaUsuario));
-        // console.log(traductorAnio(anioUsuario));
-        // console.log(traductorTransmision(transmisionUsuario));
-        // console.log(budget);
 
     });
 
@@ -76,7 +72,6 @@
         } else
             return "auto";
     }
-
     // Obtener la informacion del cotizador
 
 
@@ -92,37 +87,3 @@
 
 
 })();
-
-
-
-
-// let año = [];
-// let marca = [];
-// let modelo = [];
-// let tipo = []
-// let precio = []
-// let colores = []
-// let transmision = []
-// for (let i = 0; i < autos.length; i++) {
-//     año.push(autos[i].year);
-//     marca.push(autos[i].make);
-//     modelo.push(autos[i].model);
-//     tipo.push(autos[i].body_styles);
-//     precio.push(autos[i].price);
-//     colores.push(autos[i].colors);
-//     transmision.push(autos[i].transmision);
-
-// var manufacturedBy = " "
-// var company = document.getElementById(marca).value
-// if (company == "0") {
-//     manufacturedBy = "Chevrolet"
-// } else if (company == "1") {
-//     manufacturedBy = "Ford"
-// } else { manufacturedBy = "Nissan" }
-
-// Marca MAKE
-
-
-// Obtener el resto de la informacion del cotizador y procesarla
-// var modelo = document.getElementById('anio').value
-// var engranaje = document.getElementById('transmision')
