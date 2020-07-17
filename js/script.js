@@ -3,6 +3,8 @@
     let cardContainer = document.getElementById('linea')
     console.log(cardContainer);
     let boton = document.getElementById('boton');
+
+
     boton.addEventListener('click', function() {
         let marcaUsuario = document.getElementById('marca').value;
         let anioUsuario = document.getElementById('anio').value;
