@@ -78,16 +78,16 @@
     <main>
         <div class="container">
             <div class="centrar">
-                <form action="#" class="formulario" id="formulario">
+                <form action="#" class="formulario" id="formulario" onsubmit="return false">
                     <fieldset>
                         <legend>Cotizador</legend>
                         <div class="campo">
                             <label for="marca">Marca:</label>
                             <select name="marca" id="marca">
                         <option disabled selected> --Elija una Marca-- </option>
-                        <option value="0">Chevrolet</option>
-                        <option value="1">Ford</option>
-                        <option value="2">Nissan</option>
+                        <option value="1">Chevrolet</option>
+                        <option value="2">Ford</option>
+                        <option value="3">Nissan</option>
                     </select>
                         </div>
                         <div class="campo">
@@ -103,12 +103,15 @@
                             <select name="transmision" id="transmision">
                             <option disabled selected> --Elije la transmision--</option>
                             <option value="1">Manual</option>
-                            <option value="2">Standard</option>
+                            <option value="2">Automatico</option>
                         </select>
                         </div>
                         <div class="campo">
                             <label for="presupuesto">Presupuesto:</label>
                             <input type="number" name="presupuesto" id="presupuesto" min="15000" max="150000">
+                        </div>
+                        <div class="campo justify-content-end mt-5">
+                            <button class="btn btn-primary" id="boton">Enviar</button>
                         </div>
                     </fieldset>
                 </form>
@@ -149,7 +152,7 @@
     </main>
 
     <!--footer -->
-    <footer class="page-footer font-small blue bg-negroso pt-4">
+    <footer class="page-footer font-small blue bg-negroso mt-5">
 
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
