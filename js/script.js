@@ -15,8 +15,6 @@
 
         let cardContainer = document.getElementById('linea').innerHTML = "";
         for (var i = 0; i < autos.length; i++) {
-            // console.log(autos[i].price);
-            // console.log(autos[i].year);
             var aGastar = autos[i].price * 0.2;
             if (autos[i].year == traductorAnio(anioUsuario) && autos[i].make == traductorMarca(marcaUsuario) &&
                 aGastar <= budget && autos[i].transmision == traductorTransmision(transmisionUsuario)) {
@@ -74,14 +72,11 @@
         } else
             return "auto";
     }
-    // Obtener la informacion del cotizador
-
-
-    // Buscar opciones en la base de datos
 
 
 
-    
+
+
 
 
 
