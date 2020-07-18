@@ -82,12 +82,7 @@
 
 
     
-// PARA PAGINA NOSOTROS
 
-var Nosotros = document.getElementById('Nosotros-link')
-Nosotros.addEventListener('click', function(){
-    window.open.innerHTML('container-nosotros')
-}
 
 
 
