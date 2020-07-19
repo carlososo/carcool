@@ -1,7 +1,5 @@
 (function() {
     'use strict'
-    let cardContainer = document.getElementById('linea')
-    console.log(cardContainer);
     let boton = document.getElementById('boton');
 
 
@@ -15,30 +13,30 @@
 
         let cardContainer = document.getElementById('linea').innerHTML = "";
         for (var i = 0; i < autos.length; i++) {
+            console.log(autos[i].colors);
             var aGastar = autos[i].price * 0.2;
             if (autos[i].year == traductorAnio(anioUsuario) && autos[i].make == traductorMarca(marcaUsuario) &&
                 aGastar <= budget && autos[i].transmision == traductorTransmision(transmisionUsuario)) {
                 cardContainer = document.getElementById('linea');
-                let carta = document.createElement('div')
-                carta.classList.add('col-xl-3')
-                carta.classList.add('col-lg-4')
-                carta.classList.add('col-md-6')
-                carta.classList.add('justify-content-between')
-                    // carta.setAttribute('id', elementos.id)
-                carta.innerHTML = `<div class="card borde my-4">
-                                    <figure class="borde fondo-imagen">
-                                    <img src="img/fog-of-war-3440x1440jpg.jpg" alt="">
-                                    </figure>
-                                    <div class="card-body">
-                                        <p>${autos[i].model}</p>
+                let carta = document.createElement('div');
+                carta.classList.add('col-xl-3', 'col-lg-4', 'justify-content-between');
+                let card = document.createElement('div');
+                card.classList.add('card', 'borde', 'my-4');
+                let figura = document.createElement('figure');
+                figura.classList.add('borde', 'fondo-imagen');
+                let imagen = document.createElement('img');
+                imagen.setAttribute('src', 'img/fog-of-war-3440x1440jpg.jpg');
+                let seccionInfo = document.createElement('div');
+                seccionInfo.classList.add('card-body');
+                seccionInfo.innerHTML = ` <p>${autos[i].model}</p>
                                         <p>${autos[i].make}</p>
                                         <p>${autos[i].year}</p>
                                         <p>${autos[i].colors}</p>
-                                        <p><span class="icono" ><i class="fas fa-dollar-sign"></i> </span> ${autos[i].price}</p>
-                                    </div>
-                                </div>`
-
+                                        <p><span class="icono" ><i class="fas fa-dollar-sign"></i> </span> ${autos[i].price}</p>`
                 cardContainer.appendChild(carta);
+                carta.appendChild(figura);
+                figura.appendChild(imagen);
+                carta.appendChild(seccionInfo);
 
             } else {}
 
